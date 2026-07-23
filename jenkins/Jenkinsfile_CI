@@ -7,7 +7,7 @@ pipeline {
         stage('compile') {
 	   steps {
                 echo 'compiling..'
-		git branch: 'terraform-eks', url: 'https://github.com/puneetgavri/DevopsProjectSampleJavaApp.git'
+		git branch: 'master', url: 'https://github.com/MudavathRavi/DevopsProject.git'
 		sh script: '/opt/maven/bin/mvn compile'
            }
         }
